@@ -12,7 +12,7 @@ public class Packager {
     static List<string> paths = new List<string>();
     static List<string> files = new List<string>();
     static List<AssetBundleBuild> maps = new List<AssetBundleBuild>();
-
+    static List<AssetBundleBuild> sprialGameMaps = new List<AssetBundleBuild>();
     ///-----------------------------------------------------------
     static string[] exts = { ".txt", ".xml", ".lua", ".assetbundle", ".json" };
     static bool CanCopy(string ext) {   //能不能复制
@@ -50,6 +50,89 @@ public class Packager {
     public static void BuildWindowsResource() {
         BuildAssetResource(BuildTarget.StandaloneWindows);
     }
+    #region 添加新菜单实例
+    //hsl test 2019-10-18
+    [MenuItem("LuaFramework/Sprial Game/Build Windows Resource", false, 103)]
+    public static void BuildSprialFGameWindowResource()
+    {
+        BuildSprialGameResource(BuildTarget.StandaloneWindows);
+    }
+    [MenuItem("LuaFramework/Sprial Game/Build Android Resource", false, 104)]
+    public static void BuildSprialFGameAndroidResource()
+    {
+        BuildSprialGameResource(BuildTarget.Android);
+    }
+    [MenuItem("LuaFramework/Sprial Game/Build Iphone Resource", false, 105)]
+    public static void BuildSprialFGameIphoneResource()
+    {
+        BuildSprialGameResource(BuildTarget.iOS);
+    }
+
+    public static void BuildSprialGameResource(BuildTarget target)
+    {
+        if (Directory.Exists(Util.DataPath))
+        {
+            Directory.Delete(Util.DataPath, true);
+        }
+        string streamPath = Application.dataPath + "/StreamAssetsSprialGame/";//Application.streamingAssetsPath;
+        if (Directory.Exists(streamPath))
+        {
+            Directory.Delete(streamPath, true);
+        }
+        Directory.CreateDirectory(streamPath);
+        AssetDatabase.Refresh();
+
+        sprialGameMaps.Clear();
+        if (AppConst.LuaBundleMode)
+        {
+            HandleLuaBundle();
+        }
+        else
+        {
+            HandleLuaFile();
+        }
+        if (AppConst.ExampleMode)
+        {
+            HandleSpiralGameBundle();
+        }
+        string resPath = "Assets/StreamAssetsSprialGame";//"Assets/" + AppConst.AssetDir;
+        BuildPipeline.BuildAssetBundles(resPath, sprialGameMaps.ToArray(), BuildAssetBundleOptions.None, target);
+        BuildFileIndex();
+
+        string streamDir = Application.dataPath + "/" + AppConst.LuaTempDir;
+        if (Directory.Exists(streamDir)) Directory.Delete(streamDir, true);
+        AssetDatabase.Refresh();
+    }
+
+    static void HandleSpiralGameBundle()
+    {
+        string resPath = AppDataPath + "/" + AppConst.AssetDir + "/";
+        if (!Directory.Exists(resPath)) Directory.CreateDirectory(resPath);
+
+        AddSprialGameBuildMap("prompt" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Examples/Builds/Prompt");
+        AddSprialGameBuildMap("message" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Examples/Builds/Message");
+
+        AddSprialGameBuildMap("prompt_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Prompt");
+        AddSprialGameBuildMap("shared_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Shared");
+    }
+
+    static void AddSprialGameBuildMap(string bundleName, string pattern, string path)
+    {
+        string[] files = Directory.GetFiles(path, pattern);
+        if (files.Length == 0) return;
+
+        for (int i = 0; i < files.Length; i++)
+        {
+            files[i] = files[i].Replace('\\', '/');
+        }
+        AssetBundleBuild build = new AssetBundleBuild();
+        build.assetBundleName = bundleName;
+        build.assetNames = files;
+        sprialGameMaps.Add(build);
+    }
+# endregion 
+    //------------------------------hsl test 2019-10-18 over  ---------------------------
+
 
     /// <summary>
     /// 生成绑定素材
