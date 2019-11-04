@@ -7,6 +7,9 @@ local sproto = require "3rd/sproto/sproto"
 local core = require "sproto.core"
 local print_r = require "3rd/sproto/print_r"
 
+--local mapManager = require "GameWorld/MapManager"
+local mapManager = require "Common/MapManager"
+print(package.path)
 PromptCtrl = {};
 local this = PromptCtrl;
 
@@ -76,6 +79,13 @@ function PromptCtrl.OnClick(go)
 		this.TestSendSproto();
 	end
 	logWarn("OnClick---->>>"..go.name);
+	logError("OnClick hsl")
+	--跳转到场景map1
+	--sceneMgr.LoadSceneByName(sceneMgr,"map1")
+	sceneMgr:LoadSceneByName("map1",
+	function(name)
+		mapManager:Init(name)
+	end)
 end
 
 --测试发送SPROTO--

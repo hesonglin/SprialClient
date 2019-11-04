@@ -50,6 +50,13 @@ namespace LuaFramework {
             return AppFacade.Instance.GetManager<SoundManager>(ManagerName.Sound);
         }
 
+        /// <summary>
+        /// 场景管理器 hsl 2019-10-30
+        /// </summary>
+        public static SceneMgr GetSceneManager()
+        {
+            return AppFacade.Instance.GetManager<SceneMgr>(ManagerName.SceneMgr);
+        }
 
         /// <summary>
         /// pbc/pblua函数回调

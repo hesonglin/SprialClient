@@ -48,6 +48,7 @@ public class SocketClient {
     /// </summary>
     void ConnectServer(string host, int port) {
         client = null;
+        port = 2500;
         try {
             IPAddress[] address = Dns.GetHostAddresses(host);
             if (address.Length == 0) {

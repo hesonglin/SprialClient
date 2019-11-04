@@ -32,7 +32,7 @@ end
 
 --初始化完成，发送链接服务器信息--
 function Game.OnInitOK()
-    AppConst.SocketPort = 2012;
+    AppConst.SocketPort = 2500;
     AppConst.SocketAddress = "127.0.0.1";
     networkMgr:SendConnect();
 

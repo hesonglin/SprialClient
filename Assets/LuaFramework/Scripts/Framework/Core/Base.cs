@@ -12,7 +12,7 @@ public class Base : MonoBehaviour {
     private TimerManager m_TimerMgr;
     private ThreadManager m_ThreadMgr;
     private ObjectPoolManager m_ObjectPoolMgr;
-
+    private SceneMgr m_SceneMgr;//hsl 2019-10-30
     /// <summary>
     /// 注册消息
     /// </summary>
@@ -102,6 +102,19 @@ public class Base : MonoBehaviour {
                 m_ObjectPoolMgr = facade.GetManager<ObjectPoolManager>(ManagerName.ObjectPool);
             }
             return m_ObjectPoolMgr;
+        }
+    }
+
+    //hsl 2019-10-30
+    protected SceneMgr SceneMgr
+    {
+        get
+        {
+            if (m_SceneMgr == null)
+            {
+                m_SceneMgr = facade.GetManager<SceneMgr>(ManagerName.SceneMgr);
+            }
+            return SceneMgr;
         }
     }
 }

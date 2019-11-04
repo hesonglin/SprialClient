@@ -284,3 +284,4 @@ F:\unity3d\LuaFramework_UGUI-master\SprialClient\obj\Debug\Assembly-CSharp.cspro
 F:\unity3d\LuaFramework_UGUI-master\SprialClient\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 F:\unity3d\LuaFramework_UGUI-master\SprialClient\obj\Debug\Assembly-CSharp.dll
 F:\unity3d\LuaFramework_UGUI-master\SprialClient\obj\Debug\Assembly-CSharp.pdb
+F:\unity3d\LuaFramework_UGUI-master\SprialClient\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

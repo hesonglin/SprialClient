@@ -512,9 +512,10 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: ASYNC_MODE
-    4: ASYNC_MODE
-    7: ASYNC_MODE
+    1: ASYNC_MODE;CROSS_PLATFORM_INPUT
+    4: ASYNC_MODE;CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: ASYNC_MODE;CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: MOBILE_INPUT
   platformArchitecture:
     iOS: 0
   scriptingBackend:

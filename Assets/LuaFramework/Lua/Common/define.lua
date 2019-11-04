@@ -1,4 +1,5 @@
 
+package.path = package.path..";../GameWorld/?.lua"
 CtrlNames = {
 	Prompt = "PromptCtrl",
 	Message = "MessageCtrl"
@@ -28,6 +29,7 @@ resMgr = LuaHelper.GetResManager();
 panelMgr = LuaHelper.GetPanelManager();
 soundMgr = LuaHelper.GetSoundManager();
 networkMgr = LuaHelper.GetNetManager();
+sceneMgr = LuaHelper.GetSceneManager();--hsl 2019-10-30
 
 WWW = UnityEngine.WWW;
 GameObject = UnityEngine.GameObject;

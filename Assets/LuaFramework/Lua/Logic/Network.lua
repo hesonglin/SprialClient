@@ -34,12 +34,17 @@ end
 --当连接建立时--
 function Network.OnConnect() 
     logWarn("Game Server connected!!");
+	local buffer = ByteBuffer.New();
+	--buffer:WriteShort(Protocal.Message);
+   -- buffer:WriteByte(ProtocalType.PB_LUA);
+    buffer:WriteShort(1);
+    networkMgr:SendMessage(buffer);
 end
 
 --异常断线--
 function Network.OnException() 
     islogging = false; 
-    NetManager:SendConnect();
+    networkMgr:SendConnect();
    	logError("OnException------->>>>");
 end
 
