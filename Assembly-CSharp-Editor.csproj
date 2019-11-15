@@ -60,6 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\DisplayObjectEditor.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\EditorToolSet.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\PackagesWindow.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\StageCameraEditor.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\UIConfigEditor.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\UIContentScalerEditor.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\UIPainterEditor.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\Editor\UIPanelEditor.cs" />
     <Compile Include="Assets\LuaFramework\Editor\CustomSettings.cs" />
     <Compile Include="Assets\LuaFramework\Editor\Packager.cs" />
     <Compile Include="Assets\LuaFramework\Examples\Editor\WelcomeScreen.cs" />
@@ -85,19 +93,19 @@
     <Compile Include="Assets\LuaFramework\ToLua\Injection\Editor\ToLuaInjectionHelper.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Injection\Editor\ToLuaText.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -337,31 +345,31 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="CString">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Assets/Plugins/CString.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Assets/Plugins/CString.dll</HintPath>
     </Reference>
     <Reference Include="Debugger">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Assets/Plugins/Debugger.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Assets/Plugins/Debugger.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>F:/unity3d/LuaFramework_UGUI-master/SprialClient/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>F:/unity3d/SprialClient/SprialClient/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
