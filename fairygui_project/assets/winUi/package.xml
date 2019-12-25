@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rmap2vgw" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="f6250" name="email1.png" path="/"/>
+    <image id="f6251" name="email2.png" path="/"/>
+    <image id="f6252" name="friend1.png" path="/"/>
+    <image id="f6253" name="friend2.png" path="/"/>
+    <image id="f6254" name="head.png" path="/"/>
+    <image id="f6255" name="setting1.png" path="/"/>
+    <image id="f6256" name="setting2.png" path="/"/>
+    <image id="f6257" name="store.png" path="/"/>
+    <image id="f6258" name="achievement1.png" path="/"/>
+    <image id="f6259" name="achievement2.png" path="/"/>
+    <image id="f625a" name="bag1.png" path="/"/>
+    <image id="f625b" name="bag2.png" path="/"/>
+    <image id="f625c" name="chat.png" path="/"/>
+    <image id="f625d" name="direction.png" path="/"/>
+    <image id="f625e" name="directionitem.png" path="/"/>
+    <component id="f625f" name="Ui.xml" path="/" exported="true"/>
+    <component id="f625g" name="Button1.xml" path="/"/>
+    <component id="jrk9h" name="Button2.xml" path="/"/>
+    <component id="jrk9i" name="Button3.xml" path="/"/>
+    <component id="jrk9j" name="Button4.xml" path="/"/>
+    <component id="jrk9k" name="Button5.xml" path="/"/>
+    <component id="jrk9l" name="Button6.xml" path="/"/>
+    <component id="jrk9m" name="Button7.xml" path="/"/>
+  </resources>
+  <publish name="winUi" path="F:\unity3d\SprialClient\SprialClient\Assets\Resources"/>
+</packageDescription>

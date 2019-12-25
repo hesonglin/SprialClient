@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1280,720">
+  <displayList>
+    <component id="n2_jrk9" name="n2" src="jrk9h" fileName="Button2.xml" xy="1163,175"/>
+    <component id="n3_jrk9" name="n3" src="jrk9i" fileName="Button3.xml" xy="992,620" size="90,100"/>
+    <component id="n4_jrk9" name="n4" src="jrk9j" fileName="Button4.xml" xy="1089,621" size="90,100"/>
+    <component id="n5_jrk9" name="n5" src="jrk9k" fileName="Button5.xml" xy="893,621" size="90,100"/>
+    <component id="n6_jrk9" name="n6" src="jrk9l" fileName="Button6.xml" xy="1185,622" size="90,100"/>
+    <component id="n7_jrk9" name="n7" src="jrk9m" fileName="Button7.xml" xy="1140,3"/>
+    <image id="n8_jrk9" name="n8" src="f625d" fileName="direction.png" xy="0,462"/>
+    <image id="n9_jrk9" name="n9" src="f625e" fileName="directionitem.png" xy="82,542"/>
+    <image id="n10_jrk9" name="n10" src="f6254" fileName="head.png" xy="3,5"/>
+  </displayList>
+</component>
